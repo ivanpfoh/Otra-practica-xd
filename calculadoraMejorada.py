@@ -1,6 +1,6 @@
 def numeros():
-    n1 = int(input("Ingrese el primer numero que quiere sumar:\n " ))
-    n2 = int(input("Ingrese el segunod numero que quiere sumar:\n "))
+    n1 = int(input("Ingrese el primer numero:\n " ))
+    n2 = int(input("Ingrese el segunod numero:\n "))
     return n1, n2
 
 def calculadora (calculo):
@@ -31,4 +31,4 @@ def calculadora (calculo):
 
 
 
-print(calculadora(input("Ingrese la oepracion que quiera realizar:\n")))
+print("El resultado es: ",calculadora(input("Ingrese la operacion que quiere realizar:\n")))
