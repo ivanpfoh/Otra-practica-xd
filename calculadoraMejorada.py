@@ -8,22 +8,22 @@ def calculadora (calculo):
         if calculo == "+":
             n1, n2 = numeros()
             return (n1 + n2)
-        if calculo == "-":
+        elif calculo == "-":
             n1, n2 = numeros()
             return (n1 - n2)
-        if calculo == "*":
+        elif calculo == "*":
             n1, n2 = numeros()
             return (n1 * n2)
-        if calculo == "/":
+        elif calculo == "/":
             n1, n2 = numeros()
             return (n1 / n2)
-        if calculo == "//":
+        elif calculo == "//":
             n1, n2 = numeros()
             return (n1 // n2)
-        if calculo == "%":
+        elif calculo == "%":
             n1, n2 = numeros()
             return (n1 % n2)
-        if calculo == "**":
+        elif calculo == "**":
             n1, n2 = numeros()
             return (n1 ** n2)
     except:
