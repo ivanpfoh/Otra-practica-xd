@@ -8,7 +8,7 @@ class elfo_de_sangre:
         self.defensa = defensa
         self.ataque = ataque
     
-    def atributos():
+    def atributos(self):
         print(self.vida)
         print(self.mana)
         print(self.defensa)
@@ -17,8 +17,7 @@ class elfo_de_sangre:
 class paladin(elfo_de_sangre):
     def __init__(self, vida, mana, defensa, ataque):
         super().__init__(vida, mana, defensa, ataque)
-    def sanacion(self):
-        self.vida += 10
+
 class brujo(elfo_de_sangre):
     def __init__(self, vida, mana, defensa,ataque):
         super().__init__(vida, mana, defensa, ataque)
@@ -26,6 +25,13 @@ class brujo(elfo_de_sangre):
         self.drenar_vida = 10
         self.drenar_mana = 20
         
+        
+personaje1 = elfo_de_sangre(80,80,80,80)
+def personaje(personaje1):
+    personaje1.atributos()
+
+personaje(personaje1)
 starmack = paladin("Starmack", 100, 100, 10)
-starmack.sanacion()
+
 starmack.atributos()
+
